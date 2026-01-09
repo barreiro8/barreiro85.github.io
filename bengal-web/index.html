@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gatos Bengal con Pedigree | Reserva tu Gatito</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f9f6f0;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #5d4037, #8d6e63);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #5d4037;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .info-text {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: justify;
+    }
+    .highlight {
+      background-color: #fff8e1;
+      padding: 1.2rem;
+      border-left: 4px solid #ffc107;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    form input,
+    form textarea,
+    form select {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #5d4037;
+      color: white;
+      border: none;
+      padding: 0.9rem 2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #3e2723;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #e0d9c9;
+      color: #5d4037;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gatos Bengal con Pedigree</h1>
+    <p>Criador responsable – Próxima camada disponible para reserva</p>
+  </header>
+
+  <div class="container">
+    
+    <section>
+      <h2>Sobre Nuestros Gatos</h2>
+      <div class="info-text">
+        <p>
+          Somos un criador particular especializado en gatos Bengal de alta calidad genética. 
+          Contamos con dos hembras y un macho reproductor, todos con 
+          <strong>pedigree oficial, vacunados, microchipados y desparasitados</strong>.
+        </p>
+        <p>
+          Nuestros ejemplares provienen de líneas selectas reconocidas, garantizando 
+          patrones de rosetas definidos, excelente temperamento y salud óptima.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Próxima Camada – ¡Reserva tu Gatito!</h2>
+      <div class="info-text">
+        <p>
+          Una de nuestras hembras está próxima a entrar en celo, por lo que 
+          esperamos una nueva camada en las próximas semanas.
+        </p>
+        <div class="highlight">
+          <strong>Los gatitos se entregarán:</strong><br>
+          ✅ Castrados<br>
+          ✅ Con microchip<br>
+          ✅ Vacunados y desparasitados<br>
+          ✅ Con pedigree oficial<br>
+          ✅ A partir de las 12-14 semanas de edad
+        </div>
+        <p>
+          Puedes reservar uno de los futuros gatitos mediante un <strong>pago inicial (depósito)</strong>, 
+          que asegurará tu lugar y se descontará del precio final.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Reserva tu Gatito</h2>
+      <form action="mailto:barreiro85@icloud.com" method="post" enctype="text/plain">
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
+        <select name="interes" required>
+          <option value="">¿Qué tipo de gatito te interesa?</option>
+          <option value="Macho">Macho</option>
+          <option value="Hembra">Hembra</option>
+          <option value="Sin preferencia">Sin preferencia de sexo</option>
+        </select>
+        <textarea name="mensaje" rows="4" placeholder="Cuéntanos sobre ti, tu experiencia con gatos, tu hogar, y por qué quieres un Bengal."></textarea>
+        <button type="submit">Enviar solicitud de reserva</button>
+      </form>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Criador de Gatos Bengal. Todos los derechos reservados.</p>
+    <p>Gatos entregados castrados, con chip, vacunas, desparasitación y pedigree oficial.</p>
+  </footer>
+
+</body>
+</html>
