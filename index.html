@@ -58,36 +58,39 @@
       margin: 1.5rem 0;
       border-radius: 0 8px 8px 0;
     }
-    form {
-      max-width: 600px;
-      margin: 0 auto;
+    .reproductores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .gato-card {
+      text-align: center;
+      max-width: 280px;
       background: white;
-      padding: 1.8rem;
+      padding: 1rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
-    form input,
-    form textarea,
-    form select {
-      width: 100%;
-      padding: 0.8rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
+    .gato-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
     }
-    form button {
-      background: #5d4037;
+    .whatsapp-btn {
+      display: inline-block;
+      background: #25D366;
       color: white;
-      border: none;
-      padding: 0.9rem 2rem;
-      border-radius: 6px;
-      cursor: pointer;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1.2rem;
       font-size: 1.1rem;
-      transition: background 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    form button:hover {
-      background: #3e2723;
+    .whatsapp-btn:hover {
+      background: #128C7E;
     }
     footer {
       text-align: center;
@@ -99,6 +102,9 @@
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
+      }
+      .reproductores {
+        gap: 1rem;
       }
     }
   </style>
@@ -127,6 +133,25 @@
       </div>
     </section>
 
+    <!-- 🔸 SECCIÓN DE FOTOS – MODIFICA LOS ENLACES Y NOMBRES AQUÍ -->
+    <section>
+      <h2>Nuestros Reproductores</h2>
+      <div class="reproductores">
+        <div class="gato-card">
+          <img src="https://i.ibb.co/TqJkXzP/hembra1.jpg" alt="Hembra Bengal 1">
+          <p><strong>Luna</strong></p>
+        </div>
+        <div class="gato-card">
+          <img src="https://i.ibb.co/7yFvVrG/hembra2.jpg" alt="Hembra Bengal 2">
+          <p><strong>Zara</strong></p>
+        </div>
+        <div class="gato-card">
+          <img src="https://i.ibb.co/6nR1mQw/macho.jpg" alt="Macho Bengal">
+          <p><strong>Tiger</strong></p>
+        </div>
+      </div>
+    </section>
+
     <section>
       <h2>Próxima Camada – ¡Reserva tu Gatito!</h2>
       <div class="info-text">
@@ -149,20 +174,17 @@
       </div>
     </section>
 
- <section>
-  <h2>Reserva tu Gatito</h2>
-  <div class="info-text" style="text-align: center; padding: 2rem;">
-    <p>¿Interesado en reservar uno de nuestros gatitos Bengal?</p>
-    <a href="https://wa.me/34611187954?text=Hola,%20estoy%20interesado%20en%20reservar%20un%20gatito%20Bengal%20con%20pedigree." 
-       target="_blank"
-       style="display: inline-block; background: #25D366; color: white; padding: 14px 28px; border-radius: 10px; text-decoration: none; font-weight: bold; margin-top: 1.2rem; font-size: 1.1rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      📲 Chatear por WhatsApp
-    </a>
-    <p style="margin-top: 1.2rem; font-size: 0.95rem; color: #5d4037; max-width: 500px; margin-left: auto; margin-right: auto;">
-      Abre una conversación directa para consultar disponibilidad, pedir fotos o reservar tu gatito.
-    </p>
-  </div>
-</section>
+    <section>
+      <h2>¿Interesado?</h2>
+      <div class="info-text" style="text-align: center; padding: 2rem;">
+        <p>Abre una conversación directa para consultar disponibilidad, pedir fotos o reservar tu gatito.</p>
+        <a href="https://wa.me/34611187954?text=Hola,%20estoy%20interesado%20en%20reservar%20un%20gatito%20Bengal%20con%20pedigree." 
+           target="_blank"
+           class="whatsapp-btn">
+          📲 Chatear por WhatsApp
+        </a>
+      </div>
+    </section>
 
   </div>
 
@@ -172,5 +194,4 @@
   </footer>
 
 </body>
-
 </html>
