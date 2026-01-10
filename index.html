@@ -44,6 +44,11 @@
       font-size: 2rem;
       text-align: center;
     }
+    h3 {
+      color: #8d6e63;
+      margin: 1.2rem 0 0.8rem;
+      font-size: 1.4rem;
+    }
     .info-text {
       background: white;
       padding: 1.5rem;
@@ -80,9 +85,36 @@
       color: #5d4037;
       font-size: 0.95rem;
     }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      max-width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .color-section {
+      background: #fdf6ee;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+    .color-section img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
+      }
+      .gallery img {
+        max-width: 100%;
       }
     }
   </style>
@@ -90,7 +122,7 @@
 <body>
 
   <header>
-    <h1>Gatos Bengalí con Pedigrí</h1>
+    <h1>🐾 Gatos Bengalí con Pedigrí</h1>
     <p>Criador responsable – Próxima camada disponible para reserva</p>
   </header>
 
@@ -108,42 +140,104 @@
           Nuestros ejemplares provienen de líneas selectas reconocidas, garantizando 
           patrones de rosetas definidos, excelente temperamento y salud óptima.
         </p>
+        <p style="text-align: center; font-style: italic; margin-top: 1rem;">
+          📍 Criadero ubicado en Pontevedra, Galicia (España)
+        </p>
       </div>
     </section>
 
-    <!-- 🔸 SECCIÓN DE FOTO – ASEGÚRATE DE QUE EL ARCHIVO SE LLAME EXACTAMENTE gatos-bengal.jpg -->
-   <section>
-  <h2>Nuestros Reproductores</h2>
-  <div style="text-align: center; padding: 1rem;">
-    <img src="gatos-bengal.jpg" 
-         alt="Nuestros Gatos Bengalíes Reproductores" 
-         style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-    <p style="margin-top: 1rem; font-weight: bold; color: #5d4037;">Sasha, Shadow y Nala — Nuestros reproductores</p>
-  </div>
-</section>
-
+    <!-- 🔸 FOTO DE LOS REPRODUCTORES -->
     <section>
-      <h2>Próxima Camada – ¡Reserva tu Gatito!</h2>
-      <div class="info-text">
+      <h2>Nuestros Reproductores</h2>
+      <div style="text-align: center; padding: 1rem;">
+        <img src="gatos-bengal.jpg" 
+             alt="Nuestros Gatos Bengalíes Reproductores" 
+             style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <p style="margin-top: 1rem; font-weight: bold; color: #5d4037;">Sasha, Shadow y Nala — Nuestros reproductores</p>
+      </div>
+    </section>
+
+    <!-- 🔸 PRÓXIMA CAMADA -->
+    <section>
+      <h2>Próxima Camada – ¡Ya en camino!</h2>
+      <div class="info-text" style="text-align: center;">
+        <p><strong>Fecha estimada de nacimiento:</strong> Febrero 2026</p>
+        <p><strong>Padres:</strong> Shadow (macho) × Sasha (hembra)</p>
+        <p><strong>Colores esperados:</strong> Brown Rosetted, Snow Seal Lynx</p>
+        <p><strong>Reservas abiertas:</strong> Sí (máximo 2 reservas por camada)</p>
+      </div>
+    </section>
+
+    <!-- 🔸 COLORES Y PATRONES -->
+    <section>
+      <h2>Colores y Patrones del Bengalí</h2>
+      <div class="color-section">
+        <img src="Bengal-Colores.jpg" alt="Tipos de colores en gatos Bengalí">
+
+        <h3>El Spotted</h3>
         <p>
-          Una de nuestras hembras está próxima a entrar en celo, por lo que 
-          esperamos una nueva camada en las próximas semanas.
+          Los Bengalí spotted tienen rosetas repartidas sobre el manto. Estas rosetas deberán estar bien contorneadas para darle mayor contraste al manto. Dichas rosetas pueden estar completamente cerradas o abiertas. El interior de roseta deberá ser de otro tono, para darle así mayor contraste.
         </p>
-        <div class="highlight">
-          <strong>Los gatitos se entregarán:</strong><br>
-          ✅ Castrados<br>
-          ✅ Con microchip<br>
-          ✅ Vacunados y desparasitados<br>
-          ✅ Con pedigrí oficial<br>
-          ✅ A partir de las 12-14 semanas de edad
-        </div>
         <p>
-          Puedes reservar uno de los futuros gatitos mediante un <strong>pago inicial (depósito)</strong>, 
-          que asegurará tu lugar y se descontará del precio final.
+          El bengal Spotted se puede presentar en colores como Snow (Lynx, Mink y Sepia), Charcoal, Silver, Melanístico, Blue, etc., variando en tonalidades dependiendo del tipo.
+        </p>
+
+        <h3>El Marbled</h3>
+        <p>
+          Se caracterizan por su dibujo marmolado o arremolinado. Hay diferentes tipos de Marbled: con dibujo más abierto y con dibujo más cerrado. Los bengalí Marbled son menos comunes en camadas, ya que su nacimiento se da de la unión de dos genes recesivos, que ambos padres deben portar.
+        </p>
+        <p>
+          Al igual que los Spotted, este patrón puede verse en otros colores como en el snow, el silver, etc.
+        </p>
+
+        <h3>Bengal Snow</h3>
+        <p>
+          Dentro de los Bengalí Snow, hay 3 tipos diferentes: Snow Lynx, Snow Mink y Snow Sepia. Estos se distinguen por el color de ojos principalmente, y por el color de roseta y contraste.
+        </p>
+
+        <h4>Snow Lynx</h4>
+        <p>
+          Es el tipo más común de Snow. Estos gatitos tienen los ojos color azul, y el manto suele ser muy claro y menos contrastado. Nacen completamente blancos, y sus rosetas van apareciendo y oscureciéndose con el tiempo. Tienen genes del gato siamés.
+        </p>
+
+        <h4>Snow Mink</h4>
+        <p>
+          Es el Snow de color intermedio. Su manto es beige claro, y sus rosetas están perfiladas en marrón clarito, proporcionando más contraste. Nacen con rosetas visibles que se intensifican al crecer. El color de ojos es aguamarina (entre verde y azul). El color mink no puede ser portado por un gato Brown.
+        </p>
+
+        <h4>Snow Sepia</h4>
+        <p>
+          Es el snow más oscuro y contrastado. Su manto es beige oscuro, y sus rosetas están perfiladas en marrón oscuro. Nacen con rosetas pronunciadas. El color de los ojos suele ser marrón/amarillo. Tienen genes del gato Burmés.
+        </p>
+
+        <h3>Bengal Charcoal</h3>
+        <p>
+          Color poco visto en España. Manto muy oscuro con rosetas negras y una máscara distintiva alrededor de los ojos, dándole un aire salvaje. Ojos amarillos/marrones. También existen Snows Charcoals (fondo blanco, rosetas negras).
+        </p>
+
+        <h3>Bengal Melanístico</h3>
+        <p>
+          El menos común: manto completamente negro, brillante y sedoso. Sus rosetas son negras, por lo que son difíciles de ver (depende de la luz). Es una mini pantera. Ojos verdes o marrones intensos.
+        </p>
+
+        <h3>Bengal Silver</h3>
+        <p>
+          Fondo grisáceo muy claro con rosetas negras de alto contraste. El gen silver actúa como inhibidor del color, por lo que no debe haber tonos marrones, dorados o crema. Ojos verdes o marrones.
         </p>
       </div>
     </section>
 
+    <!-- 🔸 LO QUE ENTREGAMOS -->
+    <div class="highlight" style="text-align: center;">
+      <strong>Al adoptar, recibes:</strong><br>
+      📄 Pedigrí oficial<br>
+      💉 Vacunas y desparasitación actualizadas<br>
+      🔖 Microchip registrado a tu nombre<br>
+      ✂️ Castración incluida<br>
+      🧸 Kit de bienvenida (comida, juguete, consejos)
+    </div>
+
+    <!-- 🔸 CONTACTO -->
     <section>
       <h2>¿Interesado?</h2>
       <div class="info-text" style="text-align: center; padding: 2rem;">
@@ -165,5 +259,3 @@
 
 </body>
 </html>
-
-
