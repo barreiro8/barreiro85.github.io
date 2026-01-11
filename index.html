@@ -85,18 +85,6 @@
       color: #5d4037;
       font-size: 0.95rem;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-    .gallery img {
-      max-width: 200px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
     .color-section {
       background: #fdf6ee;
       padding: 1.5rem;
@@ -109,11 +97,19 @@
       margin: 1rem 0;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+    video {
+      display: block;
+      margin: 0 auto;
+      max-width: 600px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
       }
-      .gallery img {
+      video {
         max-width: 100%;
       }
     }
@@ -154,6 +150,34 @@
              alt="Nuestros Gatos Bengalíes Reproductores" 
              style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
         <p style="margin-top: 1rem; font-weight: bold; color: #5d4037;">Sasha, Shadow y Nala — Nuestros reproductores</p>
+      </div>
+    </section>
+
+    <!-- 🔸 VIDEOS DE CADA GATO -->
+    <section>
+      <h2>Conócelos en Acción</h2>
+      <div style="display: flex; flex-direction: column; gap: 2rem; margin-top: 1.5rem;">
+        <div>
+          <h3>Sasha</h3>
+          <video controls>
+            <source src="Sasha.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+          </video>
+        </div>
+        <div>
+          <h3>Shadow</h3>
+          <video controls>
+            <source src="Shadow.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+          </video>
+        </div>
+        <div>
+          <h3>Nala</h3>
+          <video controls>
+            <source src="Nala.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+          </video>
+        </div>
       </div>
     </section>
 
